@@ -7,6 +7,7 @@ from kivymd.uix.dialog import MDDialog
 from kivy.app import App
 from kivy.core.window import Window
 
+
 from helpers import query_helper, toolbar_helper, questions_img_I_I, questions_img_I_II, questions_img_II_I, \
     questions_img_II_II, questions_img_III_I, questions_img_III_II
 from firebase import Firebase
@@ -666,6 +667,9 @@ def alisa_reply(text):
 
     elif "thanks" in text or "thank you" in text:
         alisa_talk("you're welcome, can i help you with anything else?")
+    elif "exit" in text or "bye" in text:
+        alisa_talk("ok have a nice day")
+        
 
     # hi/hello/hai alisa
     # elif "hi" in text or "hai" in text or "hello" in text:

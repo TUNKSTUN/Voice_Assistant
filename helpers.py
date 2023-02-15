@@ -16,15 +16,15 @@ toolbar_helper = """
 Screen:
     BoxLayout:
         orientation:'vertical'
-        MDToolbar:
-            title:'Assistant'
+        MDTopAppBar:
+            title:'Alisa Voice Assistant'
             elevation:10
             md_bg_color: app.theme_cls.primary_color
 
         Widget:
 
         MDBottomAppBar:
-            MDToolbar:
+            MDTopAppBar:
                 type: 'bottom'
                 on_action_button: app.execute_assistant()
 """
@@ -69,8 +69,8 @@ ScreenManager:
         
     MDRectangleFlatButton:
         text: "Main Screen"
-        font_size: '30sp'
-        pos_hint: {"x": 0.17, "y": 0.2}
+        font_size: '20sp'
+        pos_hint: {"x": 0.5, "y": 0.2}
         on_press: app.restart()
 
     
@@ -85,19 +85,19 @@ ScreenManager:
             padding: dp(60), dp(10)
             spacing: dp(5)
             
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "mathematics_1_r16_01.jpg"
                 text: "[size=26]Mathematics (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "mathematics_1_r16_02.jpg"
                 text: "[size=26]Mathematics (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "mathematics_1_r18_01.jpg"
                 text: "[size=26]Mathematics (R18)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "mathematics_1_r18_02.jpg"
                 text: "[size=26]Mathematics (R18)[/size]"
                 
@@ -118,19 +118,19 @@ ScreenManager:
             padding: dp(60), dp(10)
             spacing: dp(5)
             
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "chemistry_r16_01.jpg"
                 text: "[size=26]Chemistry (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "chemistry_r16_02.jpg"
                 text: "[size=26]Chemistry (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "chemistry_r18_01.jpg"
                 text: "[size=26]Chemistry (R18)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "chemistry_r18_02.jpg"
                 text: "[size=26]Chemistry (R18)[/size]"
                 
@@ -151,19 +151,19 @@ ScreenManager:
             padding: dp(60), dp(10)
             spacing: dp(5)
             
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "BEE_r16_01.jpg"
                 text: "[size=26]Basic Electrical And Electronic Engineering (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "BEE_r16_02.jpg"
                 text: "[size=26]Basic Electrical And Electronic Engineering (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "BEE_r18_01.jpg"
                 text: "[size=26]Basic Electrical Engineering (R18)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "BEE_r18_02.jpg"
                 text: "[size=26]Basic Electrical Engineering (R18)[/size]"
                 
@@ -184,23 +184,23 @@ ScreenManager:
             padding: dp(60), dp(10)
             spacing: dp(5)
             
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "english_r16_01.jpg"
                 text: "[size=26]English (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "english_r16_02.jpg"
                 text: "[size=26]English (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "english_r16_03.jpg"
                 text: "[size=26]English (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "english_r18_01.jpg"
                 text: "[size=26]English (R18)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "english_r18_02.jpg"
                 text: "[size=26]English (R18)[/size]"
                 
@@ -245,8 +245,8 @@ ScreenManager:
         
     MDRectangleFlatButton:
         text: "Main Screen"
-        font_size: '30sp'
-        pos_hint: {"x": 0.37, "y": 0.2}
+        font_size: '20sp'
+        pos_hint: {"x": 0.5, "y": 0.2}
         on_press: app.restart()
 
         
@@ -261,19 +261,19 @@ ScreenManager:
             padding: dp(60), dp(10)
             spacing: dp(5)
             
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "mathematics_2_r16_01.jpg"
                 text: "[size=26]mathematics - 2 (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "mathematics_2_r16_02.jpg"
                 text: "[size=26]mathematics - 2 (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "mathematics_2_r18_01.jpg"
                 text: "[size=26]mathematics - 2 (R18)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "mathematics_2_r18_02.jpg"
                 text: "[size=26]mathematics - 2 (R18)[/size]"
                 
@@ -294,19 +294,19 @@ ScreenManager:
             padding: dp(60), dp(10)
             spacing: dp(5)
             
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "physics_r16_01.jpg"
                 text: "[size=26]Engineering Physics (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "physics_r16_02.jpg"
                 text: "[size=26]Engineering Physics (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "physics_r18_01.jpg"
                 text: "[size=26]Applied Physics (R18)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "physics_r18_02.jpg"
                 text: "[size=26]Applied Physics (R18)[/size]"
                 
@@ -327,19 +327,19 @@ ScreenManager:
             padding: dp(60), dp(10)
             spacing: dp(5)
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "c_r16_01.jpg"
                 text: "[size=26]Computer Programming In C (R16)[/size]"
                     
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "c_r16_02.jpg"
                 text: "[size=26]Computer Programming In C (R16)[/size]"
     
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "pps_r18_01.jpg"
                 text: "[size=26]Programming For Problem Solving (R18)[/size]"
                     
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "pps_r18_02.jpg"
                 text: "[size=26]Programming For Problem Solving (R18)[/size]"
     
@@ -397,8 +397,8 @@ ScreenManager:
         
     MDRectangleFlatButton:
         text: "Main Screen"
-        font_size: '30sp'
-        pos_hint: {"x": 0.1, "y": 0.3}
+        font_size: '20sp'
+        pos_hint: {"x": 0.5, "y": 0.3}
         on_press: app.restart()
 
         
@@ -413,19 +413,19 @@ ScreenManager:
             padding: dp(60), dp(10)
             spacing: dp(5)
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "ade_r16_01.jpg"
                 text: "[size=26]Digital Logic Design (R16)[/size]"
                     
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "ade_r16_02.jpg"
                 text: "[size=26]Digital Logic Design (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "ade_r18_01.jpg"
                 text: "[size=26]Analog And Digital Electronics (R18)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "ade_r18_02.jpg"
                 text: "[size=26]Analog And Digital Electronics (R18)[/size]"
 
@@ -447,19 +447,19 @@ ScreenManager:
             padding: dp(60), dp(10)
             spacing: dp(5)
             
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "coa_r16_01.jpg"
                 text: "[size=26]Computer Organization And Architecture (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "coa_r16_02.jpg"
                 text: "[size=26]Computer Organization And Architecture (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "coa_r18_01.jpg"
                 text: "[size=26]Computer Organization And Architecture (R18)[/size]"
                     
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "coa_r18_02.jpg"
                 text: "[size=26]Computer Organization And Architecture (R18)[/size]"
                     
@@ -480,19 +480,19 @@ ScreenManager:
             padding: dp(60), dp(10)
             spacing: dp(5)
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "cosm_r16_01.jpg"
                 text: "[size=26]Computer Oriented Statistical Method (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "cosm_r16_02.jpg"
                 text: "[size=26]Computer Oriented Statistical Method (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "cosm_r18_01.jpg"
                 text: "[size=26]Computer Oriented Statistical Method (R18)[/size]"
                     
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "cosm_r18_02.jpg"
                 text: "[size=26]Computer Oriented Statistical Method (R18)[/size]"
                     
@@ -513,19 +513,19 @@ ScreenManager:
             padding: dp(60), dp(10)
             spacing: dp(5)
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "ds_r16_01.jpg"
                 text: "[size=26]Data Structures (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "ds_r16_02.jpg"
                 text: "[size=26]Data Structures (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "ds_r18_01.jpg"
                 text: "[size=26]Data Structures (R18)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "ds_r18_02.jpg"
                 text: "[size=26]Data Structures (R18)[/size]"
                     
@@ -546,19 +546,19 @@ ScreenManager:
             padding: dp(60), dp(10)
             spacing: dp(5)
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "oop_r16_01.jpg"
                 text: "[size=26]Object Oriented Programming Using Java (R16)[/size]"
                     
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "oop_r16_02.jpg"
                 text: "[size=26]Object Oriented Programming Using Java (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "oop_r18_01.jpg"
                 text: "[size=26]Object Oriented Programming Using Java (R18)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "oop_r18_02.jpg"
                 text: "[size=26]Object Oriented Programming Using Java (R18)[/size]"
                     
@@ -595,13 +595,13 @@ ScreenManager:
         pos_hint: {"x": 0.25, "y": 0.7}
         on_press: root.manager.current = "dbms_img"
 
-    MDRectangleFlatButton:
+        MDRectangleFlatButton:
         text: "Discrete Mathematics"
         font_size: '30sp'
         pos_hint: {"x": 0.31, "y": 0.5}
         on_press: root.manager.current = "discrete_mathematics_img"
     
-    MDRectangleFlatButton:
+     MDRectangleFlatButton:
         text: "Java Programming"
         font_size: '30sp'
         pos_hint: {"x": 0.34, "y": 0.3}
@@ -613,10 +613,10 @@ ScreenManager:
         pos_hint: {"x": 0.35, "y": 0.1}
         on_press: root.manager.current = "operating_system_img"
         
-    MDRectangleFlatButton:
+        MDRectangleFlatButton:
         text: "Main Screen"
-        font_size: '30sp'
-        pos_hint: {"x": 0.12, "y": 0.1}
+        font_size: '20sp'
+        pos_hint: {"x": 0.5, "y": 0.1}
         on_press: app.restart()
 
         
@@ -631,19 +631,19 @@ ScreenManager:
             padding: dp(60), dp(10)
             spacing: dp(5)
             
-            SmartTileWithLabel:
+             MDSmartTile:
                 source: "befa_r16_01.jpg"
                 text: "[size=26]Buisness Economics And Financial Analysis (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "befa_r16_02.jpg"
                 text: "[size=26]Buisness Economics And Financial Analysis (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "befa_r18_01.jpg"
                 text: "[size=26]Buisness Economics And Financial Analysis (R18)[/size]"
                     
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "befa_r18_02.jpg"
                 text: "[size=26]Buisness Economics And Financial Analysis (R18)[/size]"
                     
@@ -664,19 +664,19 @@ ScreenManager:
             padding: dp(60), dp(10)
             spacing: dp(5)
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "dbms_r16_01.jpg"
                 text: "[size=26]Database Management System (R16)[/size]"
                     
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "dbms_r16_02.jpg"
                 text: "[size=26]Database Management System (R18)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "dbms_r18_01.jpg"
                 text: "[size=26]Database Management System (R18)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "dbms_r18_02.jpg"
                 text: "[size=26]Database Management System (R18)[/size]" 
                     
@@ -697,19 +697,19 @@ ScreenManager:
             padding: dp(60), dp(10)
             spacing: dp(5)
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "dm_r16_01.jpg"
                 text: "[size=26]Discrete Mathematics (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "dm_r16_02.jpg"
                 text: "[size=26]Discrete Mathematics (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "dm_r18_01.jpg"
                 text: "[size=26]Discrete Mathematics (R18)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "dm_r18_02.jpg"
                 text: "[size=26]Discrete Mathematics (R18)[/size]"
                     
@@ -730,19 +730,19 @@ ScreenManager:
             padding: dp(60), dp(10)
             spacing: dp(5)
             
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "java_r16_01.jpg"
                 text: "[size=26]Java Programming (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "java_r16_02.jpg"
                 text: "[size=26]Java Programming (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "java_r18_01.jpg"
                 text: "[size=26]Java Programming (R18)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "java_r18_02.jpg"
                 text: "[size=26]Java Programming (R18)[/size]"
                     
@@ -763,19 +763,19 @@ ScreenManager:
             padding: dp(60), dp(10)
             spacing: dp(5)
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "os_r16_01.jpg"
                 text: "[size=26]Operating System (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "os_r16_02.jpg"
                 text: "[size=26]Operating System (R16)[/size]"
                     
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "os_r18_01.jpg"
                 text: "[size=26]Operating System (R18)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "os_r18_02.jpg"
                 text: "[size=26]Operating System (R18)[/size]"
                     
@@ -840,8 +840,8 @@ ScreenManager:
         
     MDRectangleFlatButton:
         text: "Main Screen"
-        font_size: '30sp'
-        pos_hint: {"x": 0.17, "y": 0.15}
+        font_size: '20sp'
+        pos_hint: {"x": 0.5, "y": 0.15}
         on_press: app.restart()
         
 
@@ -856,19 +856,19 @@ ScreenManager:
             padding: dp(60), dp(10)
             spacing: dp(5)
             
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "cn_r16_01.jpg"
                 text: "[size=26]Computer Networks (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "cn_r16_02.jpg"
                 text: "[size=26]Computer Networks (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "cn_r18_01.jpg"
                 text: "[size=26]Computer Networks (R18)[/size]"
                     
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "cn_r18_02.jpg"
                 text: "[size=26]Computer Networks (R18)[/size]"
                     
@@ -889,19 +889,19 @@ ScreenManager:
             padding: dp(60), dp(10)
             spacing: dp(5)
             
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "dd_r16_01.jpg"
                 text: "[size=26]Distributed Database (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "dd_r16_02.jpg"
                 text: "[size=26]Distributed Database (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "dd_r18_01.jpg"
                 text: "[size=26]Distributed Database (R18)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "dd_r18_02.jpg"
                 text: "[size=26]Distributed Database (R18)[/size]"
 
@@ -923,19 +923,19 @@ ScreenManager:
             padding: dp(60), dp(10)
             spacing: dp(5)
             
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "flat_r16_01.jpg"
                 text: "[size=26]Finite Languages And Automata Theory (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "flat_r16_02.jpg"
                 text: "[size=26]Finite Languages And Automata Theory (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "flat_r18_01.jpg"
                 text: "[size=26]Finite Languages And Automata Theory (R18)[/size]"
                     
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "flat_r18_02.jpg"
                 text: "[size=26]Finite Languages And Automata Theory (R18)[/size]"
                     
@@ -956,19 +956,19 @@ ScreenManager:
             padding: dp(60), dp(10)
             spacing: dp(5)
             
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "ppl_r16_01.jpg"
                 text: "[size=26]Principles Of Programming Languages (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "ppl_r16_02.jpg"
                 text: "[size=26]Principles Of Programming Languages (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "ppl_r18_01.jpg"
                 text: "[size=26]Principles Of Programming Languages (R18)[/size]"
             
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "ppl_r18_02.jpg"
                 text: "[size=26]Principles Of Programming Languages (R18)[/size]"
                     
@@ -989,19 +989,19 @@ ScreenManager:
             padding: dp(60), dp(10)
             spacing: dp(5)
             
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "se_r16_01.jpg"
                 text: "[size=26]Software Engineering (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "se_r16_02.jpg"
                 text: "[size=26]Software Engineering (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "se_r18_01.jpg"
                 text: "[size=26]Software Engineering (R18)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "se_r18_02.jpg"
                 text: "[size=26]Software Engineering (R18)[/size]"
                     
@@ -1022,19 +1022,19 @@ ScreenManager:
             padding: dp(60), dp(10)
             spacing: dp(5)
             
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "wt_r16_01.jpg"
                 text: "[size=26]Web Technologies (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "wt_r16_02.jpg"
                 text: "[size=26]Web Technologies (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "wt_r18_01.jpg"
                 text: "[size=26]Web Technologies (R18)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "wt_r18_02.jpg"
                 text: "[size=26]Web Technologies (R18)[/size]"
                     
@@ -1084,8 +1084,8 @@ ScreenManager:
         
     MDRectangleFlatButton:
         text: "Main Screen"
-        font_size: '30sp'
-        pos_hint: {"x": 0.1, "y": 0.2}
+        font_size: '20sp'
+        pos_hint: {"x": 0.5, "y": 0.2}
         on_press: app.restart()
 
 <III_II_machine_learning_prev_img>:
@@ -1099,19 +1099,19 @@ ScreenManager:
             padding: dp(60), dp(10)
             spacing: dp(5)
             
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "ml_r16_01.jpg"
                 text: "[size=26]Machine Learning (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "ml_r16_02.jpg"
                 text: "[size=26]Machine Learning (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "ml_r18_01.jpg"
                 text: "[size=26]Machine Learning (R18)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "ml_r18_02.jpg"
                 text: "[size=26]Machine Learning (R18)[/size]"
                     
@@ -1132,19 +1132,19 @@ ScreenManager:
             padding: dp(60), dp(10)
             spacing: dp(5)
             
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "cd_r16_01.jpg"
                 text: "[size=26]Compiler Design (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "cd_r16_02.jpg"
                 text: "[size=26]Compiler Design (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "cd_r18_01.jpg"
                 text: "[size=26]Compiler Design (R18)[/size]"
                     
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "cd_r18_02.jpg"
                 text: "[size=26]Compiler Design (R18)[/size]"
                     
@@ -1165,15 +1165,15 @@ ScreenManager:
             padding: dp(60), dp(10)
             spacing: dp(5)
             
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "daa_r16_01.jpg"
                 text: "[size=26]Design And Analysis Of Algorithms (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "daa_r16_02.jpg"
                 text: "[size=26]Design And Analysis Of Algorithms (R16)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "daa_r18_01.jpg"
                 text: "[size=26]Design And Analysis Of Algorithms (R18)[/size]"
                     
@@ -1194,11 +1194,11 @@ ScreenManager:
             padding: dp(60), dp(10)
             spacing: dp(5)
             
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "sl_r18_01.jpg"
                 text: "[size=26]Scripting Languages (R18)[/size]"
                 
-            SmartTileWithLabel:
+            MDSmartTile:
                 source: "sl_r18_02.jpg"
                 text: "[size=26]Scripting Languages (R18)[/size]"
                     
@@ -1209,5 +1209,3 @@ ScreenManager:
                 on_press: root.manager.current = "III_II_subjects_img"
 
 """
-
-
